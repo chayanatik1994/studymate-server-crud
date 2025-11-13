@@ -216,7 +216,7 @@ async function run() {
      console.error("1. Your MongoDB Atlas connection string in .env file");
     console.error("2. Your IP address is whitelisted in MongoDB Atlas");
       console.error("3. Your MongoDB username and password are correct");
-    console.error("4. Your network connection is stable");
+    console.error("4. Your network connection is Stable");
   }
 }
 
