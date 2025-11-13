@@ -137,7 +137,7 @@ app.post('/partners/:id/request', async (req, res) => {
     const partnerData = await partnersCollection.findOne({ _id: new ObjectId(id) });
     await requestsCollection.insertOne({ partnerId: id, partnerData, userEmail });
 
-    res.send({ message: "Partner request sent successfully" });
+    res.send({ message: "Partner request sent Successfully" });
   } catch (error) {
     res.status(500).send({ message: "Database not connected", error: error.message });
   }
