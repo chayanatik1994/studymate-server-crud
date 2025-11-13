@@ -139,7 +139,7 @@ app.post('/partners/:id/request', async (req, res) => {
 
     res.send({ message: "Partner request sent Successfully" });
   } catch (error) {
-    res.status(500).send({ message: "Database not connected", error: error.message });
+    res.status(500).send({ message: "Database not Connected", error: error.message });
   }
 });
 
