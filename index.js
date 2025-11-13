@@ -115,7 +115,7 @@ app.delete('/partners/:id', async (req, res) => {
     const { partnersCollection } = getCollections();
     const id = req.params.id;
     const result = await partnersCollection.deleteOne({ _id: new ObjectId(id) });
-    res.send({ message: "Partner deleted", result });
+    res.send({ message: "Partner Deleted", result });
   } catch (error) {
     res.status(500).send({ message: "Database not connected", error: error.message });
   }
